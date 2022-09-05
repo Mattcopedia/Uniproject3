@@ -161,7 +161,7 @@ const CGPAForecasterInputCom = () => {
     
     <div class='justify'> 
      <RectangleRoot>
-      <p className='text-white pl-8  '>Calculate</p> 
+      <p className='text-white '>Calculate</p> 
     </RectangleRoot>
      </div>
 
@@ -294,12 +294,13 @@ const RectangleRoot = styled.div`
   border-top-right-radius: 6px;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
-  width: 200px;
+  width: 130px;
   height: 50px;
   background-color: #2d0353;
   padding-top: 12px;
   padding-bottom: 12px;
   margin-top: 20px;
+  text-align: center;
  
 `;
 

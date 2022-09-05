@@ -1,8 +1,8 @@
 import React from 'react'
 import Sidebar from 'components/Sidebar';
 import styled from "styled-components";
-import line from "../../assets/img/line.png"; 
-import sig from "../../assets/img/newsig.png";
+import line from "../../assets/img/Line 17.png"; 
+import sig from "../../assets/img/image 34.png";
 
 
 const PrintOutForm = () => {
@@ -14,7 +14,7 @@ const PrintOutForm = () => {
        <div class="bg-red-50 col-span-4"> 
        <FlexColumnRoot>
       <Text1>Course Form</Text1>
-      <Paragraph>First semester for 2020-2021 academic section</Paragraph>
+      <Paragraph>First-Semester-For 2020/2021 Academic Session.</Paragraph>
      </FlexColumnRoot>
        
        </div>
@@ -41,33 +41,58 @@ const PrintOutForm = () => {
        <div>
        <div class="grid grid-cols-5 py-4 mx-2 bg-gray-100">
        <div class="bg-gray-100 col-span-4"> 
-       <FlexColumn2>
-            <FlexRow2 gap={`27px`}>
-              <Text3 alignSelf={`inherit`}>Matric Number:</Text3>
-              <Text3 alignSelf={`flex-end`}>STA/20/7009</Text3>
-            </FlexRow2>
-            {/* 57 */}
-            <FlexRow3>
-              <Text3 alignSelf={`inherit`}>Full Name:</Text3>
-              <Text3 alignSelf={`flex-end`}>Ayomide <br className="responsivemodal"></br>    Akinyemi</Text3> 
-            </FlexRow3>
-            <FlexRow2 gap={`49px`}>
-              <Text3 alignSelf={`inherit`}>Department:</Text3>
-              <Textak alignSelf={`inherit`}>Engineering</Textak>
-            </FlexRow2>
-            <FlexRow2 gap={`52px`}>
-              <Text3 alignSelf={`inherit`}>Programme:</Text3>
-              <Textak alignSelf={`inherit`}>Statistics</Textak>
-            </FlexRow2>
-            <FlexRow2 gap={`87px`}>
-              <Text3 alignSelf={`inherit`}>Level:</Text3>
-              <Textaz alignSelf={`inherit`}>100</Textaz>
-            </FlexRow2>
-            <FlexRow2 gap={'65px'}>
-              <Text3 alignSelf={`inherit`}>Semester:</Text3>
-              <Text3 alignSelf={`inherit`}>Second semester <br className="responsivemodal"></br>  2020-2021</Text3>
-            </FlexRow2>
-          </FlexColumn2> 
+
+       <div>
+       <table  style={{width:""}}>  
+     <tr style={{height:"40px"}}>
+      
+         <th style={{ fontWeight: "normal"}}></th>
+         <th style={{ fontWeight: "normal"}}> </th>
+      
+   
+     </tr> 
+     <tr className='' style={{height:"25px"}}> 
+         <td><label className="tabelinput" for="firstcourse"><Text3>Matric Number:</Text3></label></td>
+         <td style={{paddingLeft:"40px"}}><label className="tabelinput" for="firstcourse"><Text3 >STA/20/7009</Text3></label></td>
+
+     </tr>
+  
+   
+     <tr className='' style={{height:"25px"}}> 
+         <td><label className="tabelinput" for="firstcourse"><Text3>Full Name:</Text3></label></td>
+         <td style={{paddingLeft:"40px"}}><label className="tabelinput" for="firstcourse"><Text3 >Ayomide Akinyemi</Text3></label></td>
+
+     </tr>
+     <tr className='' style={{height:"25px"}}> 
+         <td><label className="tabelinput" for="firstcourse"><Text3>Department:</Text3></label></td>
+         <td style={{paddingLeft:"40px"}}><label className="tabelinput" for="firstcourse"><Text3 >Engineering</Text3></label></td>
+
+     </tr>
+
+     <tr className='' style={{height:"25px"}}> 
+         <td><label className="tabelinput" for="firstcourse"><Text3>Programme:</Text3></label></td>
+         <td style={{paddingLeft:"40px"}}><label className="tabelinput" for="firstcourse"><Text3 >Statistics</Text3></label></td>
+
+     </tr>
+
+     <tr className='' style={{height:"25px"}}> 
+         <td><label className="tabelinput" for="firstcourse"><Text3>Level:</Text3></label></td>
+         <td style={{paddingLeft:"40px"}}><label className="tabelinput" for="firstcourse"><Text3 >100</Text3></label></td>
+
+     </tr>
+
+     <tr className='' style={{height:"25px"}}> 
+         <td><label className="tabelinput" for="firstcourse"><Text3>Semester:</Text3></label></td>
+         <td style={{paddingLeft:"40px"}}><label className="tabelinput" for="firstcourse"><Text3 >Second Semester 2020/2021</Text3></label></td>
+
+     </tr>
+
+     
+     
+ </table>
+       </div>
+
+      
        </div>
 
        <div class="bg-red-100">  
@@ -81,13 +106,13 @@ const PrintOutForm = () => {
        
          <div className=' bg-white drop-shadow-md mx-3 pb-3  pr-3'>
        <div className='mx-auto pt-3'>
-       <Text15>List of Registered</Text15>
+       <Text15>Course List</Text15>
        </div>
        {/* start here */}
-       <div style={{overflowX: "auto"}} className=''>
+       <div style={{overflowX: "auto"}} className=' mx-3'>
        <table className='printform mx-auto my-10' style={{width:""}}>  
      <tr style={{height:"40px", backgroundColor: "#e5e5e5"}}>
-         <th style={{width:"60px"}}><TextX>S/N</TextX></th>
+         <th style={{width:"60px", paddingLeft: "10px"}}><TextX>S/N</TextX></th>
          <th style={{width:"100px"}}><TextX>Course Code</TextX></th>
          <th colspan="5"style={{width:"100px"}}><TextX>Course Title</TextX></th>
          <th></th>
@@ -97,7 +122,7 @@ const PrintOutForm = () => {
          
      </tr> 
      <tr style={{height:"70px"}}>  
-         <td ><label className="tabelinput" for="firstcourse">1</label></td> 
+         <td ><label style={{ paddingLeft: "10px"}}  className="tabelinput" for="firstcourse">1</label></td> 
          <td><label className="tabelinput" for="firstcourse">Course Code</label></td>
          <td colspan="5" style={{paddingLeft:"10px"}}><label className="tabelinput" for="firstcourse">Introduction to Statistics and Maths</label></td>
          <td style={{width:"90px"}}></td> 
@@ -105,7 +130,7 @@ const PrintOutForm = () => {
          <td style={{width:"90px"}}><label className="tabelinput" for="firstcourse">4</label></td>
      </tr>
      <tr className='bg-gray-100' style={{height:"70px"}}> 
-     <td ><label className="tabelinput" for="firstcourse">2</label></td> 
+     <td ><label style={{ paddingLeft: "10px"}}  className="tabelinput" for="firstcourse">2</label></td> 
          <td><label className="tabelinput" for="firstcourse">Course Code</label></td>
          <td colspan="5" style={{paddingLeft:"10px"}}><label className="tabelinput" for="firstcourse">Introduction to Statistics and Maths</label></td>
          <td style={{width:"90px"}}></td> 
@@ -113,7 +138,7 @@ const PrintOutForm = () => {
          <td style={{width:"90px"}}><label className="tabelinput" for="firstcourse">4</label></td>
      </tr>
      <tr style={{height:"70px"}}> 
-     <td ><label className="tabelinput" for="firstcourse">3</label></td> 
+     <td ><label style={{ paddingLeft: "10px"}}  className="tabelinput" for="firstcourse">3</label></td> 
          <td><label className="tabelinput" for="firstcourse">Course Code</label></td>
          <td colspan="5" style={{paddingLeft:"10px"}}><label className="tabelinput" for="firstcourse">Introduction to Statistics and Maths</label></td>
          <td style={{width:"90px"}}></td> 
@@ -121,7 +146,7 @@ const PrintOutForm = () => {
          <td style={{width:"90px"}}><label className="tabelinput" for="firstcourse">4</label></td>
      </tr>
      <tr className='bg-gray-100' style={{height:"70px"}}> 
-     <td ><label className="tabelinput" for="firstcourse">4</label></td> 
+     <td ><label style={{ paddingLeft: "10px"}}  className="tabelinput" for="firstcourse">4</label></td> 
          <td><label className="tabelinput" for="firstcourse">Course Code</label></td>
          <td colspan="5" style={{paddingLeft:"10px"}}><label className="tabelinput" for="firstcourse">Introduction to Statistics and Maths</label></td>
          <td style={{width:"90px"}}></td> 
@@ -129,7 +154,7 @@ const PrintOutForm = () => {
          <td style={{width:"90px"}}><label className="tabelinput" for="firstcourse">4</label></td>
      </tr>
      <tr style={{height:"70px"}}> 
-     <td ><label className="tabelinput" for="firstcourse">5</label></td> 
+     <td ><label style={{ paddingLeft: "10px"}}  className="tabelinput" for="firstcourse">5</label></td> 
          <td><label className="tabelinput" for="firstcourse">Course Code</label></td>
          <td colspan="5" style={{paddingLeft:"10px"}}><label className="tabelinput" for="firstcourse">Introduction to Statistics and Maths</label></td>
          <td style={{width:"90px"}}></td> 
@@ -138,7 +163,7 @@ const PrintOutForm = () => {
      </tr>
 
      <tr style={{height:"70px"}}> 
-     <td ><label className="tabelinput" for="firstcourse">6</label></td> 
+     <td ><label style={{ paddingLeft: "10px"}}  className="tabelinput" for="firstcourse">6</label></td> 
          <td><label className="tabelinput" for="firstcourse">Course Code</label></td>
          <td colspan="5" style={{paddingLeft:"10px"}}><label className="tabelinput" for="firstcourse">Introduction to Statistics and Maths</label></td>
          <td style={{width:"90px"}}></td> 
@@ -168,28 +193,107 @@ const PrintOutForm = () => {
          
          {/* next notice */}
    
+         <div className=''>
+       <table className='bordernone'  style={{margin:"auto"}}>  
+     <tr style={{height:"5px"}}>
+      
+         <th style={{ fontWeight: "normal"}}></th>
+         <th style={{ fontWeight: "normal", paddingLeft: "70px"}}> </th>
+      
+   
+     </tr> 
+   
+  
+   
+     <tr className='' style={{height:"0px"}}> 
+         <td><label for="firstcourse"><Text24> Olabode Felix</Text24></label></td>
+         <td style={{paddingLeft:"40px"}}><label for="firstcourse">  <img  className='pl-6' width="100px" height="100px" src={sig} alt="signature"/> </label></td>
 
+     </tr>
 
-         {/* notice here */}
-         <div>
-         <div class="grid grid-cols-5 py-4 mx-4  ">
-       <div class=" mx-auto  col-span-2"> 
-       
-       <span>
-       <Text22> Olabode Felix</Text22>
-       <img src={line} alt="black line"/>
-       <p className='text-sm leading-5 absolute ml-4 text-gray-500'>Student's Signature</p>
-       </span>
-       
+     <tr className='' style={{height:"5px"}}> 
+         <td><label for="firstcourse"><img src={line} alt="black line"/></label></td>
+         <td style={{paddingLeft:"40px"}}><label for="firstcourse"><img src={line} alt="black line"/></label></td>
+
+     </tr>
+
+     <tr className='' style={{height:"5px"}}> 
+         <td><label for="firstcourse"><Text22> Student's Signature</Text22></label></td>
+         <td style={{paddingLeft:"40px"}}><label  for="firstcourse"><Text23> Date</Text23></label></td>
+
+     </tr>
+     
+ </table>
        </div>
-       <div class="mx-auto  pb-3">  
-       <img  className='pl-6' src={sig} alt="signature"/> 
-       <img src={line} alt="black line"/>
-       <Text22> Date</Text22>
-       </div>  
-         </div>
 
+        <div className=''>
+       <table className='bordernone'  style={{margin:"auto"}}>  
+     <tr style={{height:"5px"}}>
+      
+         <th style={{ fontWeight: "normal"}}></th>
+         <th style={{ fontWeight: "normal"}}> </th>
+      
+   
+     </tr> 
+   
+  
+   
+     <tr className='' style={{height:"0px"}}> 
+         <td><label for="firstcourse"><Text24> Olabode Felix</Text24></label></td>
+         <td style={{paddingLeft:"40px"}}><label for="firstcourse">  <img  className='pl-6' width="100px" height="100px" src={sig} alt="signature"/> </label></td>
+
+     </tr>
+
+     <tr className='' style={{height:"5px"}}> 
+         <td><label for="firstcourse"><img src={line} alt="black line"/></label></td>
+         <td style={{paddingLeft:"40px"}}><label for="firstcourse"><img src={line} alt="black line"/></label></td>
+
+     </tr>
+
+     <tr className='' style={{height:"5px"}}> 
+         <td><label for="firstcourse"><Text22> Student's Signature</Text22></label></td>
+         <td style={{paddingLeft:"40px"}}><label  for="firstcourse"><Text23> Date</Text23></label></td>
+
+     </tr>
+     
+ </table>
        </div>
+
+       <div className=''>
+       <table className='bordernone'  style={{margin:"auto"}}>  
+     <tr style={{height:"5px"}}>
+      
+         <th style={{ fontWeight: "normal"}}></th>
+         <th style={{ fontWeight: "normal"}}> </th>
+      
+   
+     </tr> 
+   
+  
+   
+     <tr className='' style={{height:"0px"}}> 
+         <td><label for="firstcourse"><Text24> Olabode Felix</Text24></label></td>
+         <td style={{paddingLeft:"40px"}}><label for="firstcourse">  <img  className='pl-6' width="100px" height="100px" src={sig} alt="signature"/> </label></td>
+
+     </tr>
+
+     <tr className='' style={{height:"5px"}}> 
+         <td><label for="firstcourse"><img src={line} alt="black line"/></label></td>
+         <td style={{paddingLeft:"40px"}}><label for="firstcourse"><img src={line} alt="black line"/></label></td>
+
+     </tr>
+
+     <tr className='' style={{height:"5px"}}> 
+         <td><label for="firstcourse"><Text22> Student's Signature</Text22></label></td>
+         <td style={{paddingLeft:"40px"}}><label  for="firstcourse"><Text23> Date</Text23></label></td>
+
+     </tr>
+     
+ </table>
+       </div> 
+
+     
+
 
 
 
@@ -244,7 +348,7 @@ export const devices = {
   mobileM: `(min-width: ${sizes.mobileM})`,
   mobileL: `(max-width: ${sizes.mobileL})`,
   tablet: `(max-width: ${sizes.tablet})`,
-  laptop: `(min-width: ${sizes.laptop})`,
+  laptop: `(max-width: ${sizes.laptop})`,
   laptopL: `(min-width: ${sizes.laptopL})`,
   desktop: `(min-width: ${sizes.desktop})`,
 };
@@ -280,6 +384,7 @@ const Text1 = styled.div`
   color: #df8909;
   align-self: flex-start;
   padding-left: 91px;
+  
 
   @media ${devices.mobileL} { 
     padding-left: 33px;
@@ -291,6 +396,12 @@ const Paragraph = styled.div`
   font-family: Product Sans Medium;
   line-height: 34.92px;
   color: #2d0353;
+  text-align: center;
+
+  @media ${devices.tablet} {  
+    text-align: center;
+    font-size: 25px;
+  } 
 `;
 
 const ImageRoot = styled.img`
@@ -310,6 +421,11 @@ const Text2 = styled.div`
   line-height: 23.28px;
   color: #2d0353;
   margin: 0px 0px 10px 0px;
+
+  @media ${devices.tablet} { 
+    text-align: center; 
+  } 
+
 `;
 
 const Text3 = styled.div`
@@ -320,25 +436,7 @@ const Text3 = styled.div`
   align-self: ${(props) => props.alignSelf};
 `;
 
-const Textak = styled.div`
-  font-size: 16px;
-  font-family: Product Sans Medium;
-  line-height: 15.52px;
-  color: #505050;
-  align-self: ${(props) => props.alignSelf};
 
-
- 
-`;
-const Textaz = styled.div`
-  font-size: 16px;
-  font-family: Product Sans Medium;
-  line-height: 15.52px;
-  color: #505050;
-  align-self: ${(props) => props.alignSelf};
-  
-  
-`;
 
 const FlexColumn1 = styled.div`
   height: 165px;
@@ -349,15 +447,7 @@ const FlexColumn1 = styled.div`
   margin: 0px 0px 37.5px 0px;
 `;
 
-const FlexColumn2 = styled.div`
-  display: flex;
-  align-self: flex-start;
-  flex-direction: column;
-  gap: 11px;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin: 2px 0px 0px 0px;
-`;
+
 
 
 
@@ -366,25 +456,8 @@ const Image5 = styled.img`
   height: 158px;
 `;
 
-const FlexRow2 = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: ${(props) => props.gap};
-`;
 
-const FlexRow3 = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 56px;
 
-  @media ${devices.mobileL} { 
-    gap: 56px;
-  } 
-`;
 
 
 
@@ -483,6 +556,36 @@ const Text22 = styled.div`
   align-self: flex-end;
   margin: 0px 0px 1px 0px;
   margin-left: 30px;
+
+   
+  @media ${devices.mobileL} {  
+    
+    margin-left: 40px;
+  } 
+ 
+`;
+const Text23 = styled.div`
+  font-size: 14px;
+ 
+  line-height: 21px;
+  align-self: flex-end;
+  margin: 0px 0px 1px 0px;
+  margin-left: 50px;
+
+`;
+
+const Text24 = styled.div`
+  font-size: 14px;
+  font-family: Roboto;
+  line-height: 21px;
+  align-self: flex-end;
+  margin: 0px 0px 1px 0px;
+  margin-left: 50px;
+ 
+  @media ${devices.mobileL} {  
+    
+    margin-left: 30px;
+  } 
 `;
 
 const TotalRoot = styled.div`

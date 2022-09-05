@@ -18,11 +18,11 @@ export default function Dashboard() {
                            <div className="flex justify-center text-6xl border-2 -300 bg-gray-100  p-6 ">
                             
                            <NeonCarrotFlexRow>
-                   < FlexColumn width={`148px`}>
+                    <FlexColumn width={`148px`}>
                         <Text1>Total course taken</Text1>
                         <Text2>40</Text2>
                         </FlexColumn>
-                        <Image1 src={`https://file.rendit.io/n/48e5fP8PFhbCq3auvYST.svg`} />
+                        <Image1 src={`https://file.rendit.io/n/9Vr3KV0eOirqoe47C5Ev.svg`} />
                     </NeonCarrotFlexRow>
                            
                            </div>
@@ -30,16 +30,16 @@ export default function Dashboard() {
                                  
                                 
                            <div className="flex justify-center text-6xl border-2  bg-gray-100 p-6 ">
+                              
+                           <NeonCarrotFlexRow>
+                    <FlexColumn width={`148px`}>
+                        <Text1>Ongoing course</Text1>
+                        <Text2>10</Text2>
+                        </FlexColumn>
+                        <Image1 src={`https://file.rendit.io/n/9Vr3KV0eOirqoe47C5Ev.svg`} />
+                    </NeonCarrotFlexRow>
 
-                           <WhiteFlexRow>
-                            <FlexColumn width={`127px`}>
-                            <Text1>Ongoing course</Text1>
-                            <Text2>10</Text2>
-                            </FlexColumn>
-                            <FlexColumn2>
-                            <Image2 src={`https://file.rendit.io/n/9Vr3KV0eOirqoe47C5Ev.svg`} />
-                            </FlexColumn2>
-                        </WhiteFlexRow>
+                         
 
                            </div>
                          
@@ -48,30 +48,31 @@ export default function Dashboard() {
 
                            <div className="flex flex-row justify-center text-6xl border-2 bg-gray-100   p-6 ">
 
-                           <WhiteFlexRow1>
-                            <FlexColumn width={`155px`}>
-                            <Text1>Total semester unit</Text1>
-                            <Text2>22</Text2>
-                            </FlexColumn>
-                            <FlexColumn2>
-                            <Image3 src={`https://file.rendit.io/n/kYmx87PyQZ8Krv45vTCp.svg`} />
-                            </FlexColumn2>
-                        </WhiteFlexRow1>
+                           <NeonCarrotFlexRow>
+                    <FlexColumn width={`148px`}>
+                        <Text1>Total semester unit</Text1>
+                        <Text2>22</Text2>
+                        </FlexColumn>
+                        <Image1 src={`https://file.rendit.io/n/kYmx87PyQZ8Krv45vTCp.svg`} />
+                    </NeonCarrotFlexRow>
+
+
+                          
 
 
                                </div>
        
        
                            <div className="flex justify-center text-6xl border-2 bg-gray-100 p-6 "> 
-                           <WhiteFlexRow2>
-                            <FlexColumn width={`141px`}>
-                            <Text1>Total outstanding</Text1>
-                            <Text2>2</Text2>
-                            </FlexColumn>
-                            <FlexRow>
-                            <Image4 src={`https://file.rendit.io/n/Fwb5YADEIAmUKf5EqQd2.svg`} />
-                            </FlexRow>
-                        </WhiteFlexRow2> 
+
+                           <NeonCarrotFlexRow>
+                    <FlexColumn width={`148px`}>
+                        <Text1>Total outstanding</Text1>
+                        <Text2>2</Text2>
+                        </FlexColumn>
+                        <Image1 src={`https://file.rendit.io/n/Fwb5YADEIAmUKf5EqQd2.svg`} />
+                    </NeonCarrotFlexRow>
+
                            </div>
                             
                        </div>
@@ -221,16 +222,7 @@ const Text2 = styled.div`
   color: #505050;
   align-self: flex-start;
 `;
-const FlexColumn2 = styled.div`
-  height: 50px;
-  background-image: url("https://file.rendit.io/n/W9LdE97rMbBwzTQttH7S.svg");
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 13px;
-`;
+
 const NeonCarrotFlexRow = styled.div`
   width: 239px;
   background-color: rgba(242, 153, 74, 0.1);
@@ -246,61 +238,10 @@ const Image1 = styled.img`
   width: 50px;
   height: 50px;
 `;
-const WhiteFlexRow = styled.div`
-  width: 239px;
-  background-color: #e9f4ee;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  gap: 52px;
-  align-items: flex-start;
-  border-radius: 10px;
-  padding: 18px 15px 17px 15px;
-`;
-const Image2 = styled.img`
-  width: 24px;
-  height: 22.5px;
-`;
-const WhiteFlexRow1 = styled.div`
-  width: 239px;
-  background-color: #e9eef3;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  gap: 24px;
-  align-items: flex-start;
-  border-radius: 10px;
-  padding: 18px 15px 17px 15px;
-`;
-const Image3 = styled.img`
-  width: 24px;
-  height: 24px;
-`;
-const WhiteFlexRow2 = styled.div`
-  width: 239px;
-  background-color: #f3e2e2;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  gap: 38px;
-  align-items: flex-start;
-  border-radius: 10px;
-  padding: 18px 15px 17px 15px;
-`;
-const FlexRow = styled.div`
-  width: 50px;
-  background-image: url("https://file.rendit.io/n/W9LdE97rMbBwzTQttH7S.svg");
-  background-size: cover;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 13px 0px;
-`;
-const Image4  = styled.img`
-  width: 19px;
-  height: 24px;
-`;
+
+
+
+
 
 
 

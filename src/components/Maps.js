@@ -19,12 +19,12 @@ const Maps = () => {
  });
 
 
-  return (
+  return ( 
     <>
 
        <div className='cool static'> 
-       <ReactMapGL  mapStyle="mapbox://styles/mapbox/streets-v8" mapboxApiAccessToken= {"pk.eyJ1Ijoib2ZlaW11biIsImEiOiJjbDdocDBia2cwZ2xuM3dzYWI2OGFyZmp1In0.rr7Z0vJJRAA6Wund5yDKdw"} 
-       
+       <ReactMapGL  mapStyle="mapbox://styles/mapbox/streets-v8" mapboxApiAccessToken= {process.env.REACT_APP_MAPBOX_TOKEN} 
+        
        {...viewport}
        onViewportChange={(newView) => setViewport(newView)}  
       

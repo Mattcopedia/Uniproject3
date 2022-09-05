@@ -109,6 +109,43 @@ function App() {
             <Route exact path="/cgpa-forecaster-input" component={CGPAForecasterInput} /> 
             <Route exact path="/upload-doc" component={UploadDoc} />     
             <Route exact path="/loadmaps" component={Maps} />  
+
+{/* 
+            padding at the left placeholder profile +++ more to be done
+
+            default will be unselected first checkbox coursereg  +++
+
+            push up profile info make the remaining 3 like the first one +++
+
+            align properly printout and they shouldn't touch the end of the screen
+
+            Course List and not List of Registered Courses. +++
+          
+            popup comes up after they click transfer form and not on Page load  +++
+          
+            align signature and date properly like on the Figma, +++ 
+
+            each page must have name of rakoni logo and university name.  
+
+            margin dont touch end of screen(including Text and icons )
+            and screen table should have enough space both outside and inbetween on different devices +++ continous improvement for this. 
+
+            cgpa GpaTool
+            he will give me the Cgpa logic
+
+            all the text in Course Form the text should be center. All text even course form should be centered. All First letter in Capital CASES. 
+
+            Apply all this to Other 
+
+            First-Semester-For 2020/2021 Academic Session. +++
+
+            Fully functional student module by next zoom demo.  
+
+            Make Demo myself from my laptop */}
+
+
+
+
             
            
             

@@ -120,7 +120,9 @@ br.responsive {
     
   } 
    
-
+.bordernone,th,td {
+  border: none;
+}
 
 
   table,
@@ -451,6 +453,7 @@ br.responsive {
         display: flex;
         flex-direction: row;
         justify-content: center !important;
+        padding-left: 12px;
       }
 
 

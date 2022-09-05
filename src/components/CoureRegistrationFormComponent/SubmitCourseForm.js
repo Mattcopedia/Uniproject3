@@ -209,7 +209,7 @@ const SubmitCourseForm = () => {
      <br />
      <div class='justify'> 
      <RectangleRoot>
-      <p onClick={() => setShouldshow(true)} className='text-white  pl-2  lg:pl-6 cursor-pointer'>Submit course form</p>   
+      <p onClick={() => setShouldshow(true)} className='text-white  pl-2 text-center lg:pl-6 cursor-pointer'>Submit course form</p>   
     </RectangleRoot>
 
     <WhiteFlexRowRoot>
@@ -348,9 +348,9 @@ const Texty = styled.div`
   font-size: 14px;
   font-family: Roboto;
   line-height: 21px;
-  color: #787878;
-  cursor: pointer;
-
+  color: #787878; 
+  cursor: pointer; 
+  text:center; 
   @media ${devices.mobileL} {  
  
   } 

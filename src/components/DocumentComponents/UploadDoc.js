@@ -35,7 +35,7 @@ const UploadDoc = () => {
             </SelectAcademicYearRoot1> 
 
             <div className='desc ' >   
-            <textarea  style={{border: "1px solid black"}}  rows="4" cols="47" placeholder='Assignment for STAT 200' id="FirstName"/>  
+            <textarea  style={{border: "0.5px solid black"}}  rows="4" cols="46" placeholder='Assignment for STAT 200' id="FirstName"/>  
             </div>
           
             <SelectAcademicYearRoot2>

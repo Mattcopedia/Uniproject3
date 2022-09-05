@@ -1,4 +1,4 @@
-import React, {useState, useEffect } from 'react'
+import React, {useState} from 'react'
 import "../br.css" 
 import styled from "styled-components";
 import RegistrationHeader from 'components/ResultsComponents/RegistrationHeader';
@@ -49,12 +49,7 @@ const ModalBody = styled.div`
 const CourseReg = () => {
    const [shouldshow, setShouldshow] = useState(false);
 
-   useEffect(() => { 
-        setTimeout(() => {
-            setShouldshow(true);
-        }, 3000);
-    
-}, []);
+
 
 
 
@@ -74,7 +69,9 @@ const CourseReg = () => {
                     </FlexColumn>
                     <FlexRow>
                     <WhiteText onClick={() => setShouldshow(false)}>Cancel</WhiteText>
+                    <Link to="/submit-course-form">
                     <RoyalPurpleText onClick={() => setShouldshow(false)}>Continue</RoyalPurpleText>
+                    </Link>
                     </FlexRow>
                 </FlexColumn>
                 </WhiteFlexColumnRoot>
@@ -109,7 +106,7 @@ const CourseReg = () => {
      </tr>    
 
      <tr style={{height:"70px"}}> 
-         <td > <input checked style={{marginLeft:"15px"}} type="checkbox" id="firstcourse" name="firstcourse"  />
+         <td > <input  style={{marginLeft:"15px"}} type="checkbox" id="firstcourse" name="firstcourse"  />
          </td> 
          <td><label for="firstcourse"> <Text3>STA 101</Text3></label></td>
          <td ><label for="firstcourse"><Text3>Statistics</Text3></label></td>
@@ -121,7 +118,7 @@ const CourseReg = () => {
      </tr>
 
      <tr className='bg-gray-100' style={{height:"70px"}}> 
-         <td > <input checked style={{marginLeft:"15px"}} type="checkbox" id="firstcourse" name="firstcourse"  />
+         <td > <input  style={{marginLeft:"15px"}} type="checkbox" id="firstcourse" name="firstcourse"  />
          </td> 
          <td><label for="firstcourse"> <Text3>STA 101</Text3></label></td>
          <td ><label for="firstcourse"><Text3>Statistics</Text3></label></td>
@@ -133,7 +130,7 @@ const CourseReg = () => {
      </tr>
 
      <tr style={{height:"70px" }}> 
-         <td > <input checked style={{marginLeft:"15px"}} type="checkbox" id="firstcourse" name="firstcourse"  />
+         <td > <input  style={{marginLeft:"15px"}} type="checkbox" id="firstcourse" name="firstcourse"  />
          </td> 
          <td><label for="firstcourse"> <Text3>STA 101</Text3></label></td>
          <td ><label for="firstcourse"><Text3>Statistics</Text3></label></td>
@@ -145,7 +142,7 @@ const CourseReg = () => {
      </tr>
 
      <tr className='bg-gray-100' style={{height:"70px" }}> 
-         <td > <input checked style={{marginLeft:"15px"}} type="checkbox" id="firstcourse" name="firstcourse"  />
+         <td > <input  style={{marginLeft:"15px"}} type="checkbox" id="firstcourse" name="firstcourse"  />
          </td> 
          <td><label for="firstcourse"> <Text3>STA 101</Text3></label></td>
          <td ><label for="firstcourse"><Text3>Statistics</Text3></label></td>
@@ -157,7 +154,7 @@ const CourseReg = () => {
      </tr>
 
      <tr style={{height:"70px"}}> 
-         <td > <input checked style={{marginLeft:"15px"}} type="checkbox" id="firstcourse" name="firstcourse"  />
+         <td > <input  style={{marginLeft:"15px"}} type="checkbox" id="firstcourse" name="firstcourse"  />
          </td> 
          <td><label for="firstcourse"> <Text3>STA 101</Text3></label></td>
          <td ><label for="firstcourse"><Text3>Statistics</Text3></label></td>
@@ -169,7 +166,7 @@ const CourseReg = () => {
      </tr>
 
      <tr className='bg-gray-100' style={{height:"70px" }}> 
-         <td > <input checked style={{marginLeft:"15px"}} type="checkbox" id="firstcourse" name="firstcourse"  />
+         <td > <input  style={{marginLeft:"15px"}} type="checkbox" id="firstcourse" name="firstcourse"  />
          </td> 
          <td><label for="firstcourse"> <Text3>STA 101</Text3></label></td>
          <td ><label for="firstcourse"><Text3>Statistics</Text3></label></td>
@@ -181,7 +178,7 @@ const CourseReg = () => {
      </tr>
 
      <tr style={{height:"70px"}}> 
-         <td > <input checked style={{marginLeft:"15px"}} type="checkbox" id="firstcourse" name="firstcourse"  />
+         <td > <input  style={{marginLeft:"15px"}} type="checkbox" id="firstcourse" name="firstcourse"  />
          </td> 
          <td><label for="firstcourse"> <Text3>STA 101</Text3></label></td>
          <td ><label for="firstcourse"><Text3>Statistics</Text3></label></td>
@@ -211,9 +208,8 @@ const CourseReg = () => {
      <br />
      <div class='justify'> 
      <RectangleRoot>
-      <Link to="/submit-course-form">
-      <p className='text-white pl-3'>Transfer to course form</p> 
-      </Link>
+      
+      <p className='text-white pl-3 cursor-pointer' onClick={() => setShouldshow(true)}>Transfer to course form</p> 
     </RectangleRoot>
      </div>
         

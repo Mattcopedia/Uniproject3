@@ -3,7 +3,7 @@ import React from 'react'
 const CGPACalculatorForm = () => {
   return (
     <div>
-               <div style={{overflowX: "auto"}} className='bg-white mx-16 my-4 mb-11 '> 
+               <div style={{overflowX: "auto"}} className='bg-white lg:mx-16 md:mx-16 mx-3 my-4 mb-11 '> 
      <table className='Youresult' style={{width:"100%"}} >    
      <tr style={{height:"40px", backgroundColor: "#e5e5e5"}}>
          <th style={{width:"60px"}}></th>
