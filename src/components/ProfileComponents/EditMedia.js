@@ -20,7 +20,34 @@ const EditMedia = () => {
     
             <div>
             <FlexColumn>
-                <div className='mb-'>
+              <div>
+            <Element1>
+            <FlexColumnaw>
+              <Link to="/profile-edit">
+                <Text1z>Profile</Text1z>
+                </Link>
+              </FlexColumnaw>
+
+              <Line src={`https://file.rendit.io/n/6cBDw74bzdqLtcJNebMN.svg`} />
+              <FlexColumnaw>
+              <Link to="/editpassword">
+                <Text1z>Password</Text1z>
+                </Link>
+              </FlexColumnaw>
+
+              <Line src={`https://file.rendit.io/n/6cBDw74bzdqLtcJNebMN.svg`} />
+              
+              <FlexColumnaw>
+              <Link to="/editmedia">
+                <Text1>Media</Text1>
+                </Link>
+                <RoyalPurpleRectangle />
+              </FlexColumnaw>
+            </Element1> 
+            </div>
+
+
+                {/* <div className='mb-'>
                 <GroupRootyw>
                     
                     <Lineyw src={`https://file.rendit.io/n/OYu2xn0faX7xcwwhEVap.svg`} />
@@ -50,24 +77,37 @@ const EditMedia = () => {
                     </Link>
                     
                     </GroupRootyw>  
-                </div>
+                </div> */}
                            
 
                 <FlexColumn1>
                 
 
                 <form>   
+                 
+               
 
 
-             
+              
                     <FlexRowyt>
                     <Element2yt>
                         <Text1yw left={`23px`}>Profile Picture</Text1yw>
-                        <Image1yt src={`https://file.rendit.io/n/dAGk2wWCFjaRIPqyrp8E.png`} />
+                          <label className='cursor-pointer' htmlFor="uploadpic">
+                          <Image1yt src={`https://file.rendit.io/n/dAGk2wWCFjaRIPqyrp8E.png`} />
+                            <input className='file' id="uploadpic" type="file"/>
+                            </label>    
+                        
                     </Element2yt>
                     <Element3yt>
+
                         <Text1yw left={`12px`}>Student signature</Text1yw>
+
+                        
+                        <label className='cursor-pointer' htmlFor="uploadpic">
                         <Image2yt src={`https://file.rendit.io/n/kKEXT2GCVBjGZLYyKG97.png`} />
+                            <input className='file' id="uploadpic" type="file"/>
+                            </label>  
+
                     </Element3yt>
                     </FlexRowyt>  
 
@@ -204,30 +244,54 @@ const FlexColumn1 = styled.div`
 
 
 
-
-
-
-const FlexColumnyw = styled.div`
+const Element1 = styled.div`
+  width: 484px;
+  height: 31px;
   display: flex;
-  position: absolute;
-  top: 11px;
+  flex-direction: row; 
+  margin-top:10px;
+`;
+const FlexColumnaw = styled.div`
+  
+  position: static;
+  gap: 7px;
+  display: flex;
   flex-direction: column;
-  gap: 14px;
   justify-content: center;
   align-items: center;
-  left: ${(props) => props.left};
+`;
+const Text1 = styled.div`
+ 
+  margin: 0px 2px 0px 0px;
+  color: #2d0353;
+  font-size: 14px;
+  font-family: Roboto;
+  line-height: 21px;
+  white-space: nowrap;
 `;
 
-const GroupRootyw = styled.div`
-  width: 453px;
-  height: 49px;
-  position: relative;
+const Text1z = styled.div`
+  align-self: flex-start;
+  margin: 0px 2px 0px 0px;
+  color: #2d0353;
+  font-size: 14px;
+  font-family: Roboto;
+  line-height: 21px;
+  white-space: nowrap;
+  padding-bottom:10px; 
 `;
-const Lineyw = styled.img`
-  width: 453px;
+
+const RoyalPurpleRectangle = styled.div`
+  width: 90px;
+  height: 3px;
+  border-radius: 8px 8px 0px 0px;
+  background-color: #2d0353;
+`;
+const Line = styled.img`
+  width: 30px;
   height: 0.5px;
-  position: absolute;
-  top: 48.5px;
+  top: 30.5px;
+  position: static;
 `;
 const Text1yw = styled.div`
   font-size: 14px;
@@ -237,24 +301,7 @@ const Text1yw = styled.div`
   align-self: flex-start;
 `;
 
-const RoyalPurpleRectangle1yw = styled.div`
-  width: 62px;
-  height: 3px;
-  background-color: #2d0353;
-  opacity: 0;
-`;
-const RoyalPurpleRectangle2yw = styled.div`
-  width: 39px;
-  height: 3px;
-  background-color: #2d0353;
-  opacity: 0;
-`;
 
-const RoyalPurpleRectangle1 = styled.div`
-  width: 62px;
-  height: 3px;
-  background-color: #2d0353;
-`;
 
 
 

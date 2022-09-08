@@ -20,32 +20,32 @@ const EditPassword = () => {
     
             <div>
             <FlexColumn>
-                <div className='mb-'>
-                <GroupRootyw>
-                    
-                    <Lineyw src={`https://file.rendit.io/n/OYu2xn0faX7xcwwhEVap.svg`} />
-                    <Link to="/profile-edit">
-                    <FlexColumnyw left={`34px`}>
-                        <Text1yw>Profile</Text1yw>   
-                        <RoyalPurpleRectangle1yw />   
-                        </FlexColumnyw>
-                        </Link>
-              
-                     <FlexColumnyw left={`106px`}>
-                        <Text1yw>Password</Text1yw>
-                        <RoyalPurpleRectangle1 />                        
-                     </FlexColumnyw>
+            <div>
+            <Element1>
+            <FlexColumnaw>
+              <Link to="/profile-edit">
+                <Text1z>Profile</Text1z>
+                </Link>
+              </FlexColumnaw>
 
-                  
-                    <Link to="/editmedia">
-                    <FlexColumnyw left={`194px`}>
-                        <Text1yw>Media</Text1yw>
-                        <RoyalPurpleRectangle2yw />
-                    </FlexColumnyw>
-                    </Link>
-                    
-                    </GroupRootyw>  
-                </div>
+              <Line src={`https://file.rendit.io/n/6cBDw74bzdqLtcJNebMN.svg`} />
+              <FlexColumnaw>
+              <Link to="/editpassword">
+                <Text1>Password</Text1>
+                </Link>
+                <RoyalPurpleRectangle />
+              </FlexColumnaw>
+             
+
+              <Line src={`https://file.rendit.io/n/6cBDw74bzdqLtcJNebMN.svg`} />
+              <FlexColumnaw>
+              <Link to="/editmedia">
+                <Text1z>Media</Text1z>
+                </Link>
+              </FlexColumnaw>
+              
+            </Element1> 
+            </div>
                            
 
                 <FlexColumn1>
@@ -211,62 +211,56 @@ const FlexColumn1 = styled.div`
 
   } 
 `; 
-
-
-
-
-
-
-
-
-const FlexColumnyw = styled.div`
+const Element1 = styled.div`
+  width: 484px;
+  height: 31px;
   display: flex;
-  position: absolute;
-  top: 11px;
+  flex-direction: row; 
+  margin-top:10px;
+`;
+const FlexColumnaw = styled.div`
+  
+  position: static;
+  gap: 7px;
+  display: flex;
   flex-direction: column;
-  gap: 14px;
   justify-content: center;
   align-items: center;
-  left: ${(props) => props.left};
 `;
-
-const GroupRootyw = styled.div`
-  width: 453px;
-  height: 49px;
-  position: relative;
-`;
-const Lineyw = styled.img`
-  width: 453px;
-  height: 0.5px;
-  position: absolute;
-  top: 48.5px;
-`;
-const Text1yw = styled.div`
+const Text1 = styled.div`
+ 
+  margin: 0px 2px 0px 0px;
+  color: #2d0353;
   font-size: 14px;
   font-family: Roboto;
   line-height: 21px;
-  color: #2d0353;
+  white-space: nowrap;
+`;
+
+const Text1z = styled.div`
   align-self: flex-start;
+  margin: 0px 2px 0px 0px;
+  color: #2d0353;
+  font-size: 14px;
+  font-family: Roboto;
+  line-height: 21px;
+  white-space: nowrap;
+  padding-bottom:10px; 
 `;
 
-const RoyalPurpleRectangle1yw = styled.div`
-  width: 62px;
+const RoyalPurpleRectangle = styled.div`
+  width: 90px;
   height: 3px;
+  border-radius: 8px 8px 0px 0px;
   background-color: #2d0353;
-  opacity: 0;
 `;
-const RoyalPurpleRectangle2yw = styled.div`
-  width: 39px;
-  height: 3px;
-  background-color: #2d0353;
-  opacity: 0;
+const Line = styled.img`
+  width: 30px;
+  height: 0.5px;
+  top: 30.5px;
+  position: static;
 `;
 
-const RoyalPurpleRectangle1 = styled.div`
-  width: 62px;
-  height: 3px;
-  background-color: #2d0353;
-`;
 
 
 

@@ -123,7 +123,9 @@ br.responsive {
 .bordernone,th,td {
   border: none;
 }
-
+.file[type="file"] {
+  display: none;
+}
 
   table,
     th,
@@ -288,6 +290,22 @@ br.responsive {
    justify-content: center;
     }
 
+    .amendment select  {
+      padding: 8px;
+      width: 365px;
+      -webkit-appearance: button;
+      appearance: button;
+      outline: none;
+    border-color: #787878;
+    border-style: solid; 
+    margin: auto;
+    border-radius: 6px;
+    border-width: 0.5px; 
+    display: flex;
+   flex-direction: row;
+   justify-content: center;
+    }
+
    
 
     .searchbtn input[type=text] {
@@ -373,6 +391,22 @@ br.responsive {
         .box select {
           width: 120px; 
         }
+
+        .amendment select  {
+          
+          width: 360px;
+          -webkit-appearance: button;
+          appearance: button;
+          outline: none;
+        border-color: #787878;
+        border-style: solid; 
+        margin: auto;
+        border-radius: 6px;
+        border-width: 0.5px; 
+        display: flex;
+       flex-direction: row;
+       justify-content: center;
+        }
        
         } 
 
@@ -456,6 +490,14 @@ br.responsive {
         padding-left: 12px;
       }
 
+      .amendment {
+        padding-left: 10px;
+       }
+        .amendment select {
+          width: 280px;
+          height: 50px;
+          
+        }
 
         } 
       
