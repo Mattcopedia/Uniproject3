@@ -29,7 +29,7 @@ const {REACT_APP_MAPBOX_TOKEN} = process.env
       
          
        {...viewport}
-       onViewportChange={(newView) => setViewport(newView)}  
+       onViewportChange={(newView) => setViewport(newView)}   
       
        >
         
