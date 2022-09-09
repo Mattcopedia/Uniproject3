@@ -4,8 +4,7 @@ import "./br.css"
 
 import ticket from "../assets/img/submit a ticket.PNG";
 import Sidebar from "./Sidebar";
-import img1 from "../assets/img/help3n.png";
-import img2 from "../assets/img/student.PNG";  
+
 
 
 export default function StudentHelpDesk() {
@@ -21,31 +20,20 @@ export default function StudentHelpDesk() {
   return (
     <>
     <Sidebar />
-    <section class=" mb-4 body-font overflow-hidden"> 
-  <div class="container  ">
-    <div class="flex flex-wrap ">
-      <div class=" md:w-1/2 flex flex-col pb-2 -m-5 items-start">
-        <div class="flex items-center flex-wrap  w-full">
-
-        <img width={660} height={1000} src={img2} alt="help desk" />
-
-         {/* -m-7 */}
-
-        </div>
-      </div>
-
-      <div class="md:w-1/2 flex flex-col items-start ">
-        <div class="flex items-center flex-wrap w-full">
+    <div className="grid grid-cols-5 py-4 mb-16 mx-4 resultcolor bg-gray-100 ">
+       <div className=" col-span-4"> 
+       <FlexColumnRoot>
+      <Paragraph4> Student Help <br className="responsivemodal"></br> Desk</Paragraph4> 
+     </FlexColumnRoot>
          
-         
-         <img width={1000} height={700} src={img1} alt="help desk" />
-        
-        </div>
-      
-      </div>
-    </div>
-  </div>
-</section>
+       </div>
+       <div className=" bg-gray-100">   
+       <ImageRoot src={`https://file.rendit.io/n/4LVVYAe4zpARayxk4t17.svg`}  /> 
+       </div>  
+     
+    </div> 
+
+
 
 
     <StudentRoot>
@@ -216,6 +204,36 @@ export const devices = {
   laptopL: `(max-width: ${sizes.laptopL})`,
   desktop: `(max-width: ${sizes.desktop})`,
 };
+
+const FlexColumnRoot = styled.div`
+    
+flex-direction: column;
+gap: 15px;
+
+`;
+
+
+const Paragraph4 = styled.div`
+font-size: 36px;
+font-family: Product Sans Medium;
+line-height: 34.92px;
+color: #2d0353;
+text-align: left;
+padding-left: 91px;
+font-weight: bold;
+
+@media ${devices.mobileL} { 
+  
+  padding-left: 33px;
+} 
+`; 
+
+const ImageRoot = styled.img`
+width: 100px;
+height: 100px;
+`;
+
+
 const RectangleRoot = styled.div`
   width: 156px;
   display: flex;
