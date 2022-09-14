@@ -633,6 +633,9 @@ video {
 .ml-10{
 	margin-left: 2.5rem;
 }
+.mb-16{
+	margin-bottom: 4rem;
+}
 .mb-5{
 	margin-bottom: 1.25rem;
 }
@@ -668,9 +671,6 @@ video {
 }
 .ml-3{
 	margin-left: 0.75rem;
-}
-.mb-16{
-	margin-bottom: 4rem;
 }
 .block{
 	display: block;
@@ -2699,10 +2699,6 @@ video {
 	}
 	.md\:grid-cols-2{
 		grid-template-columns: repeat(2, minmax(0, 1fr));
-	}
-	.md\:bg-white{
-		--tw-bg-opacity: 1;
-		background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
 	}
 	.md\:px-3{
 		padding-left: 0.75rem;
