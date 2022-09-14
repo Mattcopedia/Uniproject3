@@ -11,6 +11,7 @@ export default function Dashboard() {
          <Sidebar /> 
  
          <div>
+           
          <div className="mx-7 my-4 ">
                    
                    <div className="container mx-auto mb-4 bg-gray-100 "> 
@@ -80,16 +81,16 @@ export default function Dashboard() {
                          </div>  
 
                          <div class="flex flex-wrap">
-  <div class="w-full sm:w-1/1 md:w-1/1 lg:w-1/2 xl:w-1/3 mb-4   mx-  mt-4">
-  <WhiteFlexColumnRootyw>
-      <Ellipseyw src={`https://file.rendit.io/n/tsYpb8jtUOnBDZAMizwM.png`} />
-      <FlexColumnyw>
-        <Text1yw>Department</Text1yw>
-        <Text2yw>Statistics</Text2yw>
-      </FlexColumnyw>
-      <FlexColumn1yw> 
-        <Text3yw>Matric No:</Text3yw>
-        <Text4yw>STA/19/7009</Text4yw>
+                <div class="w-full sm:w-1/1 md:w-1/1 lg:w-1/2 xl:w-1/3 mb-4   mx-  mt-4">
+                <WhiteFlexColumnRootyw>
+                    <Ellipseyw src={`https://file.rendit.io/n/tsYpb8jtUOnBDZAMizwM.png`} />
+                    <FlexColumnyw>
+                      <Text1yw>Department</Text1yw>
+                      <Text2yw>Statistics</Text2yw>
+                    </FlexColumnyw>
+                    <FlexColumn1yw> 
+                      <Text3yw>Matric No:</Text3yw>
+                      <Text4yw>STA/19/7009</Text4yw>
         
       </FlexColumn1yw>
       <div className="bg-gray-100"> 
@@ -102,6 +103,7 @@ export default function Dashboard() {
     </WhiteFlexColumnRootyw>
     
     </div>
+
   <div class="w-full sm:w-1/1 md:w-1/1 lg:w-1/2 xl:w-1/3 mb-4 ">
   <WhiteFlexRowRootzw>
       <FlexColumnzw>

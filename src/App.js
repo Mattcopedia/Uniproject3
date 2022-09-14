@@ -108,7 +108,7 @@ function App() {
             <Route exact path="/cgpa-goalsetter-input" component={CGPAGoalSetterInput} /> 
             <Route exact path="/cgpa-forecaster-input" component={CGPAForecasterInput} /> 
             <Route exact path="/upload-doc" component={UploadDoc} />     
-            <Route exact path="/loadmaps" component={Maps} />  
+            <Route exact path="/loadmaps" component={Maps} />   
 
 {/* 
             padding at the left placeholder profile +++ more to be done
